@@ -1,2 +1,2 @@
 # NONE
-NONE is a esoteric programming language
+NONE is an esoteric programming language that can output text
