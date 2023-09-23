@@ -1,5 +1,5 @@
 # NONE
-NONE is an esoteric programming language that can output text
+NONE is an esoteric programming language that can output letters, numbers and special characters.
 
 ## About
 NONE is an esoteric programming language that can output text created by Jaip-Coding in 2023. Together with the included generator, it can also be used to encrypt and decrypt text to NONE format. The current version is 1.0
