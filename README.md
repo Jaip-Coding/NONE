@@ -40,3 +40,18 @@ The letter "n" will be output.
 **Example 2**: ```++p+t+vp```
 
 NONE can also output multiple letters. This program would output "az".
+
+### Clear, Whitespace and capitalized
+
+**Clear (c)**
+
+With Clear (c), the index can be reset to 0
+
+**Whitespace (_)**
+
+You can make Whitespace between the letters with "_"
+
+**Capitalize letters (^)**
+
+You can capitalize letters by putting a "^" before Print (p)
+
