@@ -55,3 +55,14 @@ You can make Whitespace between the letters with "_"
 
 You can capitalize letters by putting a "^" before Print (p)
 
+### Numbers
+
+You can write numbers with n() and put a number as a NONE index between the parentheses. It will be output immediately even without print
+
+**Example**: ```n(+v++)```
+
+The output will be "6"
+
+### Special characters
+
+You can write special characters with s() and put a number as a NONE index between the parentheses as with numbers. It will be output immediately even without print
