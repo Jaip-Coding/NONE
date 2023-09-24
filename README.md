@@ -71,10 +71,11 @@ You can write special characters with s() and put a number as a NONE index betwe
 | ------------- | ------------- |
 | s(++--) | _ |
 | s(++) | . |
-| s(++++) | Decreases the index by 1 |
-| s(++++++) | Increases the index by 5 |
-| s(+v----) | Decreases the index by 5 |
-| s(+v--) | Increases the index by 10 |
-| s(+v) | Decreases the index by 10 |
-| s(+v++) | Increases the index by 20 |
-| s(+v++++) | Decreases the index by 20 |
+| s(++++) | ! |
+| s(++++++) | ? |
+| s(+v--) | , |
+| s(+v) | : |
+| s(+v++) | ( |
+| s(+v++++) | ) |
+| s(+v++++++) | @ |
+| s(+v++++++++) | % |
