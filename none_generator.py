@@ -92,13 +92,15 @@ for token in USER_TOKENS:
         OUTPUT += "n(+v++++++)"
     elif token == "9":
         OUTPUT += "n(+v++++++++)"
+    elif token == "_":
+        OUTPUT += "s(++--)"
     elif token == ".":
         OUTPUT += "s(++)"
     elif token == "!":
         OUTPUT += "s(++++)"
     elif token == '?':
         OUTPUT += "s(++++++)"
-    elif token == '"':
+    elif token == '#':
         OUTPUT += "s(+v--)"
     elif token == ":":
         OUTPUT += "s(+v)"
@@ -106,7 +108,7 @@ for token in USER_TOKENS:
         OUTPUT += "s(+v++)"
     elif token == ")":
         OUTPUT += "s(+v++++)"
-    elif token == "/":
+    elif token == "@":
         OUTPUT += "s(+v++++++)"
     elif token == "%":
         OUTPUT += "s(+v++++++++)"
