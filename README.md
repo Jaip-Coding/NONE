@@ -13,16 +13,16 @@ NONE works with only 13 allowed characters: ```+ - c p n s ( ) _ ^ v x t```
 ### Index
 NONE has an index that is set to zero at the beginning. It can be increased or decreased:
 
-| NONE  | Description |
+| NONE | Description |
 | ------------- | ------------- |
-| ++  | Increases the index by 1 |
-| --  | Decreases the index by 1 |
-| +v  | Increases the index by 5 |
-| -v  | Decreases the index by 5 |
-| +x  | Increases the index by 10 |
-| -x  | Decreases the index by 10 |
-| +t  | Increases the index by 20 |
-| -t  | Decreases the index by 20 |
+| ++ | Increases the index by 1 |
+| -- | Decreases the index by 1 |
+| +v | Increases the index by 5 |
+| -v | Decreases the index by 5 |
+| +x | Increases the index by 10 |
+| -x | Decreases the index by 10 |
+| +t | Increases the index by 20 |
+| -t | Decreases the index by 20 |
 
 v stands for 5, x for 10 and t for 20.
 
@@ -57,7 +57,7 @@ You can capitalize letters by putting a "^" before Print (p)
 
 ### Numbers
 
-You can write numbers with n() and put a number as a NONE index between the parentheses. It will be output immediately even without print
+You can write numbers with n() and put a number as a NONE index between the parentheses. +x and +t are not allowed. It will be output immediately even without print
 
 **Example**: ```n(+v++)```
 
@@ -65,4 +65,16 @@ The output will be "6"
 
 ### Special characters
 
-You can write special characters with s() and put a number as a NONE index between the parentheses as with numbers. It will be output immediately even without print
+You can write special characters with s() and put a number as a NONE index between the parentheses as with numbers. +x and +t are not allowed. It will be output immediately even without print.
+
+| NONE | character |
+| ------------- | ------------- |
+| s(++--) | _ |
+| s(++) | . |
+| s(++++) | Decreases the index by 1 |
+| s(++++++) | Increases the index by 5 |
+| s(+v----) | Decreases the index by 5 |
+| s(+v--) | Increases the index by 10 |
+| s(+v) | Decreases the index by 10 |
+| s(+v++) | Increases the index by 20 |
+| s(+v++++) | Decreases the index by 20 |
