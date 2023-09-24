@@ -6,7 +6,7 @@ import re
 
 TOKENS = "abcdefghijklmnopqrstuvwxyz"
 TOKENS_CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-SPECIAL_TOKENS = '.!?":()/%'
+SPECIAL_TOKENS = '_.!?-:()@%'
 
 USER_INPUT = input()
 
@@ -79,7 +79,7 @@ for token in USER_TOKENS:
                 LAST_TOKEN = "-"
             elif token == ")":
                 LAST_TOKEN = None
-                OUTPUT += SPECIAL_TOKENS_LIST[SPECIAL_INDEX - 1]
+                OUTPUT += SPECIAL_TOKENS_LIST[SPECIAL_INDEX]
                 SPECIAL_INDEX = 0
                 IS_SPECIAL = False
         continue
