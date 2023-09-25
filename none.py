@@ -6,7 +6,7 @@ import re
 
 TOKENS = "abcdefghijklmnopqrstuvwxyz"
 TOKENS_CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-SPECIAL_TOKENS = '_.!?":()@#'
+SPECIAL_TOKENS = '_.!?,:()@#'
 MATH_TOKENS = "$+-*/=%^<>"
 
 USER_INPUT = input()
