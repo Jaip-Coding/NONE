@@ -9,6 +9,11 @@ TOKENS_CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 USER_INPUT = input()
 
+if USER_INPUT == "file:" or USER_INPUT == "file" or USER_INPUT == "File:" or USER_INPUT == "File" or USER_INPUT == "FILE:" or USER_INPUT == "FILE":
+    USER_INPUT = input()
+    with open(USER_INPUT, 'r') as file:
+        USER_INPUT = file.read()
+
 USER_TOKENS = re.split(r'(\d|\D)', USER_INPUT)
 
 for token in USER_TOKENS:
@@ -132,6 +137,9 @@ for token in USER_TOKENS:
         OUTPUT += "m(+v++++++)"
     elif token == ">":
         OUTPUT += "m(+v++++++++)"
+    elif token == "\n":
+        INDEX = 0
+        OUTPUT += "\n"
     elif token in TOKENS:
         POS = TOKENS.index(token) + 1
         if POS - INDEX >= 20 or POS - INDEX > 17:
