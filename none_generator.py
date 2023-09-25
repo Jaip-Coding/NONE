@@ -100,7 +100,7 @@ for token in USER_TOKENS:
         OUTPUT += "s(++++)"
     elif token == '?':
         OUTPUT += "s(++++++)"
-    elif token == '"':
+    elif token == ',':
         OUTPUT += "s(+v--)"
     elif token == ":":
         OUTPUT += "s(+v)"
