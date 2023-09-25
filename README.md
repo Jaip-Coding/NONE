@@ -91,8 +91,8 @@ You can write mathematical characters with m() and put a number as a NONE index 
 | m(++++) | - |
 | m(++++++) | * |
 | m(+v--) | / |
-| m(+v) | : |
-| m(+v++) | ( |
-| m(+v++++) | ) |
+| m(+v) | = |
+| m(+v++) | % |
+| m(+v++++) | ^ |
 | m(+v++++++) | < |
 | m(+v++++++++) | > |
