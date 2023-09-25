@@ -11,6 +11,11 @@ MATH_TOKENS = "$+-*/=%^<>"
 
 USER_INPUT = input()
 
+if USER_INPUT == "run:" or USER_INPUT == "run" or USER_INPUT == "Run:" or USER_INPUT == "Run" or USER_INPUT == "RUN:" or USER_INPUT == "RUN":
+    USER_INPUT = input()
+    with open(USER_INPUT, 'r') as file:
+        USER_INPUT = file.read()
+    
 USER_TOKENS = re.split(r'(\d|\D)', USER_INPUT)
 
 for token in USER_TOKENS:
@@ -188,5 +193,8 @@ for token in USER_TOKENS:
         elif token == "c":
             INDEX = 0
             LAST_TOKEN = None
+        elif token == "\n":
+            INDEX = 0
+            OUTPUT += "\n"
 
 print(OUTPUT)
