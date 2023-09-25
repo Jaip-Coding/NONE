@@ -78,4 +78,4 @@ You can write special characters with s() and put a number as a NONE index betwe
 | s(+v++) | ( |
 | s(+v++++) | ) |
 | s(+v++++++) | @ |
-| s(+v++++++++) | % |
+| s(+v++++++++) | # |
