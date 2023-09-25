@@ -8,7 +8,7 @@ NONE is an esoteric programming language that can output text created by Jaip-Co
 Download the repo and run "none.py" You can now enter NONE code into the terminal and execute it by pressing Enter.
 
 ## Syntax
-NONE works with only 13 allowed characters: ```+ - c p n s ( ) _ ^ v x t```
+NONE works with only 14 allowed characters: ```+ - c p n s m ( ) _ ^ v x t```
 
 ### Index
 NONE has an index that is set to zero at the beginning. It can be increased or decreased:
@@ -79,3 +79,20 @@ You can write special characters with s() and put a number as a NONE index betwe
 | s(+v++++) | ) |
 | s(+v++++++) | @ |
 | s(+v++++++++) | # |
+
+### Mathematical characters
+
+You can write mathematical characters with m() and put a number as a NONE index between the parentheses as with numbers and special characters. +x and +t are not allowed. It will be output immediately even without print.
+
+| NONE | character |
+| ------------- | ------------- |
+| m(++--) | $ |
+| m(++) | + |
+| m(++++) | - |
+| m(++++++) | * |
+| m(+v--) | / |
+| m(+v) | : |
+| m(+v++) | ( |
+| m(+v++++) | ) |
+| m(+v++++++) | < |
+| m(+v++++++++) | > |
