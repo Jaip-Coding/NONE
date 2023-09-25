@@ -100,7 +100,7 @@ for token in USER_TOKENS:
         OUTPUT += "s(++++)"
     elif token == '?':
         OUTPUT += "s(++++++)"
-    elif token == '#':
+    elif token == '"':
         OUTPUT += "s(+v--)"
     elif token == ":":
         OUTPUT += "s(+v)"
@@ -110,8 +110,28 @@ for token in USER_TOKENS:
         OUTPUT += "s(+v++++)"
     elif token == "@":
         OUTPUT += "s(+v++++++)"
-    elif token == "%":
+    elif token == "#":
         OUTPUT += "s(+v++++++++)"
+    elif token == "$":
+        OUTPUT += "m(++--)"
+    elif token == "+":
+        OUTPUT += "m(++)"
+    elif token == "-":
+        OUTPUT += "m(++++)"
+    elif token == '*':
+        OUTPUT += "m(++++++)"
+    elif token == '/':
+        OUTPUT += "m(+v--)"
+    elif token == "=":
+        OUTPUT += "m(+v)"
+    elif token == "%":
+        OUTPUT += "m(+v++)"
+    elif token == "^":
+        OUTPUT += "m(+v++++)"
+    elif token == "<":
+        OUTPUT += "m(+v++++++)"
+    elif token == ">":
+        OUTPUT += "m(+v++++++++)"
     elif token in TOKENS:
         POS = TOKENS.index(token) + 1
         if POS - INDEX >= 20 or POS - INDEX > 17:
