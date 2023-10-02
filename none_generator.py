@@ -142,6 +142,26 @@ for token in USER_TOKENS:
         OUTPUT += "\n"
     elif token in TOKENS:
         POS = TOKENS.index(token) + 1
+        if (token == "a" or token == "e" or token == "j" or token == "t") and INDEX != 0:
+            OUTPUT += "c"
+            INDEX = 0
+            clear_func = Clear(INDEX)
+            OUTPUT += str(Clear(INDEX)[0])
+            INDEX = clear_func[1]
+        elif POS - INDEX > 0:
+            if POS < POS - INDEX:
+                OUTPUT += "c"
+                INDEX = 0
+                clear_func = Clear(INDEX)
+                OUTPUT += str(Clear(INDEX)[0])
+                INDEX = clear_func[1]
+        elif POS - INDEX < 0:
+            if 0 - POS > POS - INDEX:
+                OUTPUT += "c"
+                INDEX = 0
+                clear_func = Clear(INDEX)
+                OUTPUT += str(Clear(INDEX)[0])
+                INDEX = clear_func[1]
         if POS - INDEX >= 20 or POS - INDEX > 17:
             OUTPUT += "+t"
             INDEX += 20
@@ -223,12 +243,6 @@ for token in USER_TOKENS:
             for i in range(0, POS - INDEX):
                 OUTPUT += "++"
                 INDEX += 1
-        elif POS - 0 > POS - INDEX:
-            OUTPUT += "c"
-            INDEX = 0
-            clear_func = Clear(INDEX)
-            OUTPUT += str(Clear(INDEX)[0])
-            INDEX = clear_func[1]
         elif POS - INDEX < -7:
             OUTPUT += "-x"
             INDEX -= 10
@@ -274,7 +288,7 @@ for token in USER_TOKENS:
                     OUTPUT += "--"
                     INDEX -= 1
         elif POS - INDEX < 0:
-            for i in range(0, POS - INDEX):
+            for i in range(0, abs(POS - INDEX)):
                 OUTPUT += "--"
                 INDEX -= 1
         
@@ -282,6 +296,26 @@ for token in USER_TOKENS:
         
     elif token in TOKENS_CAPS:
         POS = TOKENS_CAPS.index(token) + 1
+        if (token == "A" or token == "E" or token == "J" or token == "T") and INDEX != 0:
+            OUTPUT += "c"
+            INDEX = 0
+            clear_func = Clear(INDEX)
+            OUTPUT += str(Clear(INDEX)[0])
+            INDEX = clear_func[1]
+        elif POS - INDEX > 0:
+            if POS < POS - INDEX:
+                OUTPUT += "c"
+                INDEX = 0
+                clear_func = Clear(INDEX)
+                OUTPUT += str(Clear(INDEX)[0])
+                INDEX = clear_func[1]
+        elif POS - INDEX < 0:
+            if 0 - POS > POS - INDEX:
+                OUTPUT += "c"
+                INDEX = 0
+                clear_func = Clear(INDEX)
+                OUTPUT += str(Clear(INDEX)[0])
+                INDEX = clear_func[1]
         if POS - INDEX >= 20 or POS - INDEX > 17:
             OUTPUT += "+t"
             INDEX += 20
@@ -363,12 +397,6 @@ for token in USER_TOKENS:
             for i in range(0, POS - INDEX):
                 OUTPUT += "++"
                 INDEX += 1
-        elif POS - 0 > POS - INDEX:
-            OUTPUT += "c"
-            INDEX = 0
-            clear_func = Clear(INDEX)
-            OUTPUT += str(Clear(INDEX)[0])
-            INDEX = clear_func[1]
         elif POS - INDEX < -7:
             OUTPUT += "-x"
             INDEX -= 10
@@ -414,7 +442,7 @@ for token in USER_TOKENS:
                     OUTPUT += "--"
                     INDEX -= 1
         elif POS - INDEX < 0:
-            for i in range(0, POS - INDEX):
+            for i in range(0, abs(POS - INDEX)):
                 OUTPUT += "--"
                 INDEX -= 1
         
